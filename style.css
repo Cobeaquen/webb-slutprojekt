@@ -114,7 +114,10 @@ li {
 .social-media{
 	text-align: center;
 	margin-right: 60%;
-	/* margin-top: 25px; */
+	display: inline;
+	position: relative;
+	top: 20px;
+	left: 100px;
 }
 
 .fa {
