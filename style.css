@@ -4,7 +4,7 @@
 }
 
 @font-face {
-	font-family: Alegreya Sans SC Thin;
+	font-family: Alegreya Sans SC;
 	src: url(AlegreyaSansSC-Thin.ttf);
 }
 
@@ -127,6 +127,7 @@ li {
 	width: 80px;
 	float: right;
 	clear: right;
+	margin-right: 70%;
 }
 
 .fa-instagram {
@@ -135,6 +136,7 @@ li {
 	width: 80px; 
 	float: right;
 	clear: right;
+	margin-right: 70%;
 }
 
 h1 {
@@ -167,7 +169,7 @@ footer {
 #footer_logo {
 	float: left;
 	height: 256px;
-	padding-right: 80px;
+	margin-right: 80px;
 }
 
 .name {
