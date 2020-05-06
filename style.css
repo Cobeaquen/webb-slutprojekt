@@ -62,7 +62,8 @@ ul {
 }
 
 li {
-	display: inline;
+    display: inline;
+    user-select: none;
 }
 
 .vertical-menu {
