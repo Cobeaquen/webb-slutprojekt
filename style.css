@@ -13,9 +13,51 @@
 	src: url(AlegreyaSansSC-Light.ttf);
 }
 
+@keyframes in {
+	from {
+		right: 0%;
+	}
+	to {
+		right: 100%;
+	}
+}
+
+@keyframes ut {
+	from {
+		left: 100%;
+	}
+	to {
+		left: 0%;
+	}
+}
+
 #bildspel {
+	  position: relative;
+	  width: 100%;
+	  height: 1000px;
+}
+
+#bild {
+	width: 100%;
 	height: 1000px;
-	background-image: none;
+	position: absolute;
+	animation-name: in;
+	animation-duration: 1s;
+	animation-play-state: paused;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	background-image: url('bilder/bildspel/img0.jpg');
+}
+#nybild {
+	width: 100%;
+	height: 1000px;
+	position: absolute;
+	animation-name: ut;
+	animation-duration: 1s;
+	animation-play-state: paused;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	background-image: url('bilder/bildspel/img1.jpg');
 }
 
 .user-navigation {
@@ -164,7 +206,12 @@ h2 {
 	text-align: center;
 }
 
+html {
+	width: 100%;
+}
+
 body {
+	width: 100%;
 	background-color: #303030;
 	font-family: Alegreya Sans;
 }
