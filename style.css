@@ -13,6 +13,12 @@
 	src: url(AlegreyaSansSC-Light.ttf);
 }
 
+.user-navigation {
+	float: right;
+	margin-top: 12px;
+	margin-right: 12px;
+}
+
 .dropbtn {
 	font-family: Alegreya Sans SC Light;
 	background-color: black;
