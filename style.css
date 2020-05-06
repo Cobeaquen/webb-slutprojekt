@@ -4,13 +4,8 @@
 }
 
 @font-face {
-	font-family: Alegreya Sans SC Thin;
+	font-family: Alegreya Sans SC;
 	src: url(AlegreyaSansSC-Thin.ttf);
-}
-
-@font-face {
-	font-family: Alegreya Sans SC Light;
-	src: url(AlegreyaSansSC-Light.ttf);
 }
 
 .dropbtn {
