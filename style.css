@@ -14,9 +14,8 @@
 }
 
 #bildspel {
-	width: 100px;
-	height: 200px;
-	background-color: red;
+	height: 1000px;
+	background-image: none;
 }
 
 .user-navigation {

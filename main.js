@@ -1,5 +1,6 @@
 var index = 0;
 var imgs = ['bilder\\bildspel\\img1.jpg', 'bilder\\bildspel\\img2.jpg', 'bilder\\bildspel\\img3.jpg']
+var imgElement;
 
 function imageCycle() {
     imgs.forEach().call(function(v, i) {
@@ -10,4 +11,5 @@ function imageCycle() {
 
 window.onload = function() {
     setInterval(this.imageCycle(), 1000)
+    this.imgElement = document.getElementById('bildspel');
 };
