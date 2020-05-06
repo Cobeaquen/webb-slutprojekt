@@ -87,6 +87,10 @@ li {
 	text-decoration: none;
 	color: white;
 	font-size: 2em;
+	width: 500px;
+}
+.vertical-menu a:hover{
+	text-decoration: underline;
 }
 
 .footer_name {
@@ -123,8 +127,9 @@ li {
 	color: white;
 	width: 80px;
 	float: right;
-	clear: right;
+	clear: none;
 	margin-right: 70%;
+	margin-top: 5px;
 }
 
 .fa-instagram {
@@ -132,7 +137,7 @@ li {
 	color: white;
 	width: 80px; 
 	float: right;
-	clear: right;
+	clear: none;
 	margin-right: 70%;
 }
 
@@ -166,7 +171,7 @@ footer {
 #footer_logo {
 	float: left;
 	height: 256px;
-	margin-right: 80px;
+	padding-right: 80px;
 }
 
 .name {
