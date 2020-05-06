@@ -13,6 +13,12 @@
 	src: url(AlegreyaSansSC-Light.ttf);
 }
 
+#bildspel {
+	width: 100px;
+	height: 200px;
+	background-color: red;
+}
+
 .user-navigation {
 	float: right;
 	margin-top: 12px;
