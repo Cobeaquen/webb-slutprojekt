@@ -121,11 +121,17 @@ li {
 .fa-twitter {
 	background: black;
 	color: white;
+	width: 80px;
+	float: right;
+	clear: right;
 }
 
 .fa-instagram {
 	background: black;
 	color: white;
+	width: 80px; 
+	float: right;
+	clear: right;
 }
 
 h1 {
@@ -147,6 +153,7 @@ body {
 
 footer {
 	padding-top: 10px;
+	padding-bottom: 5px;
 }
 
 #logo {
