@@ -92,7 +92,8 @@ li {
 .footer_name {
 	font-size: 1.5em;
 	margin-left: 20px;
-	margin-bottom: 20px;
+	float: left;
+	clear: left;
 }
 
 .info {
@@ -102,6 +103,8 @@ li {
 
 .social-media{
 	text-align: center;
+	margin-top: 25px;
+	margin-right: 60%;
 }
 
 .fa {
