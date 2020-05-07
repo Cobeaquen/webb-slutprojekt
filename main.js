@@ -36,5 +36,5 @@ function nextImg() {
 
 window.onload = function() {
     //setInterval(this.imageCycle, 3000)
-    this.nextImg();
+    setTimeout(this.nextImg, 3000);
 };
