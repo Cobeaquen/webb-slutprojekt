@@ -35,11 +35,14 @@
 	  position: relative;
 	  width: 100%;
 	  height: 1000px;
+	  overflow-x: hidden;
+	  z-index: -1;
+	  pointer-events: none;
 }
 
 #bild {
-	width: 100%;
-	height: 1000px;
+	width: inherit;
+	height: inherit;
 	position: absolute;
 	animation-name: in;
 	animation-duration: 1s;
@@ -47,10 +50,13 @@
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
 	background-image: url('bilder/bildspel/img0.jpg');
+	pointer-events: none;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 #nybild {
-	width: 100%;
-	height: 1000px;
+	width: inherit;
+	height: inherit;
 	position: absolute;
 	animation-name: ut;
 	animation-duration: 1s;
@@ -58,6 +64,45 @@
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
 	background-image: url('bilder/bildspel/img1.jpg');
+	pointer-events: none;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#buttons {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: inherit;
+	font-size: 200px;
+	
+}
+
+.fa-chevron-right, .fa-chevron-left {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: inherit;
+	font-size: 200px;
+
+	position: absolute;
+	background-color: transparent;
+	border-color: white;
+	color: rgba(80, 80, 80, 0.5);
+	top: 350px;
+}
+
+.fa-chevron-right {
+	right: 0%;
+}
+
+.fa-chevron-right:hover, .fa-chevron-left:hover {
+	color: white;
+	border: 2px;
+}
+
+.fa-chevron-left {
+	left: 0%;
 }
 
 .user-navigation {
@@ -170,7 +215,7 @@ li {
 	transition-duration: 0.4s;
 }
 
-.fa:hover {
+.fa-twitter:hover, .fa-instagram:hover, .fa-shopping-cart:hover, .fa-user:hover {
 	color: black;
 	background-color: white;
 }
@@ -207,11 +252,11 @@ h2 {
 }
 
 html {
-	width: 100%;
+	
 }
 
 body {
-	width: 100%;
+	max-width: 2560px;
 	background-color: #303030;
 	font-family: Alegreya Sans;
 }
