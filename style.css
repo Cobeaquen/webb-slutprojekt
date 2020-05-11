@@ -234,12 +234,16 @@ h1 {
 	font-family: Alegreya Sans SC Thin;
 	color: white;
 	text-align: center;
-	padding-top: 50px;
+	padding-top: 20px;
+	font-size: 50px;
 }
 
 h2 {
 	color: white;
 	text-align: center;
+	font-family: Alegreya Sans SC Light;
+	font-size: 30px;
+	padding-top: 0px;
 }
 
 html {
@@ -255,6 +259,10 @@ body {
 footer {
 	padding-top: 10px;
 	padding-bottom: 5px;
+}
+
+main {
+	padding-top: 10px;
 }
 
 #logo {
