@@ -64,4 +64,15 @@ function moveImg(forward) {
 
 window.onload = function() {
     this.timeout = setTimeout(this.nextImg, 4000);
+    this.addEventListener('focus', () => {
+
+    });
+};
+window.onkeydown = function(key) {
+    if (key.keyCode == 39)  {                       // trycker ned högerpilen
+        this.moveImg(true);
+    }
+    else if (key.keyCode == 37) {                   // trycker ned vänsterepilen
+        this.moveImg(false);
+    }
 };

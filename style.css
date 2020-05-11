@@ -70,7 +70,7 @@
 }
 
 #buttons {
-	position: absolute;
+	position: relative;
 	z-index: 1;
 	width: 100%;
 	height: inherit;
@@ -80,14 +80,6 @@
 
 .fa-chevron-right, .fa-chevron-left {
 	position: absolute;
-	z-index: 1;
-	width: 100%;
-	height: inherit;
-	font-size: 200px;
-
-	position: absolute;
-	background-color: transparent;
-	border-color: white;
 	color: rgba(80, 80, 80, 0.5);
 	top: 350px;
 }
@@ -98,7 +90,6 @@
 
 .fa-chevron-right:hover, .fa-chevron-left:hover {
 	color: white;
-	border: 2px;
 }
 
 .fa-chevron-left {
