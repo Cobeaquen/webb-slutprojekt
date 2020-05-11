@@ -1,6 +1,6 @@
 var index = 0;
 var index2 = 1;
-var imgs = ['bilder/bildspel/img0.jpg', 'bilder/bildspel/img1.jpg', 'bilder/bildspel/img2.jpg', 'bilder/bildspel/img3.jpg']
+var imgs = ['bilder/bildspel/img0.png', 'bilder/bildspel/img1.jpg', 'bilder/bildspel/img2.jpg', 'bilder/bildspel/img3.jpg']
 var newImgElem = document.getElementById('nybild');
 var imgElem = document.getElementById('bild');
 var timeout;
