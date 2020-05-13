@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta content="Custom made, high quality keyboards" name="keyboard, gaming, 60%, mechanical keyboard">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="store.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="ICON" href="favicon.ico" type="image/ico">
         <title>Store</title>
@@ -11,7 +12,7 @@
     <body>
         <header>
 			<div class="clearfix">
-				<a href="">
+				<a href="index.html">
 				<img id="logo" src="tk.gif" alt="TangentKeys logo">
 				<span class="name">
 					<b>tangent</b>keys
@@ -36,7 +37,61 @@
 					</div>
 				</ul>
 			</div>
-		</header>
+        </header>
+
+        <main>
+			<div id="product-specifier">
+				<input type="checkbox" id="all-products" value="Products">
+				<label for="all-products">All products</label><br>
+				<input type="checkbox" id="cases-and-plates" value="Products">
+				<label for="cases-and-plates">Cases and plates</label><br>
+				<input type="checkbox" id="pcbs" value="Products">
+				<label for="pcbs">PCBs</label><br>
+				<input type="checkbox" id="keyboards" name="p" value="Products">
+				<label for="keyboards">Keyboards</label><br>
+				<input type="checkbox" id="custom-assembly" name="p" value="Products">
+				<label for="custom-assembly">Custom assembly</label><br>
+			</div>
+
+            <div id="products">
+                <a class="product" style="background-image: url('bilder/bildspel/img0.jpg');" href="product.html">
+                    <div id="img"></div>
+					<span class="product-text">TanDuck60RGB</span>
+					<p class="product-type-text">Keyboard</p>
+					
+					<div class="info-texts">
+						<p>Pricing: $180</p>
+						<p>Availability: 1 pcs</p>
+						<p>Formfactor: 60%</p>
+					</div>
+				</a>
+
+				<a class="product" style="background-image: url('bilder/bildspel/img1.jpg');" href="product.html">
+                    <div id="img"></div>
+					<span class="product-text">TK60</span>
+					<p class="product-type-text">PCB</p>
+					
+					<div class="info-texts">
+						<p>Pricing: $30</p>
+						<p>Availability: 5 pcs</p>
+						<p>Formfactor: 60%</p>
+					</div>
+				</a>
+
+				<a class="product" style="background-image: url('bilder/bildspel/img2.jpg');" href="product.html">
+                    <div id="img"></div>
+					<span class="product-text">Custom Assembly</span>
+					<p class="product-type-text">Keyboard</p>
+					
+					<div class="info-texts">
+						<p>Pricing: $200-$300</p>
+						<p>Availability: 5 pcs</p>
+						<p>Formfactor: 60%</p>
+					</div>
+				</a>
+            </div>
+
+        </main>
         
         <footer>
 			<div class="clearfix">
@@ -62,5 +117,7 @@
 				<p>
 			</div>
         </footer>
+
+        <script src="store.js"></script>
     </body>
 </html>
