@@ -207,7 +207,7 @@ li {
 	transition-duration: 0.4s;
 }
 
-.fa-twitter:hover, .fa-instagram:hover, .fa-shopping-cart:hover, .fa-user:hover {
+.fa-twitter:hover, .fa-instagram:hover, .fa-shopping-cart:hover {
 	color: black;
 	background-color: white;
 }
@@ -231,12 +231,19 @@ li {
 	margin-right: 70%;
 }
 
-h1 {
+.h1_news {
 	font-family: Alegreya Sans SC Thin;
 	color: white;
 	text-align: center;
 	padding-top: 20px;
 	font-size: 50px;
+}
+.h1_login {
+	font-family: Alegreya Sans SC thin;
+	color: white;
+	text-align: center;
+	font-size: 34px;
+	margin-top: -10px;
 }
 
 h2 {
@@ -313,6 +320,56 @@ main {
 	overflow: auto;
 	color: white;
 	background-color: black;
+}
+
+.login_menu {
+	overflow: auto;
+	color: #fff;
+	background-color: #000;
+	width: 320px;
+	height: 440px;
+	top: 60%;
+	left: 42%;
+	position: relative;
+}
+.login_menu p {
+	text-align: left;
+	padding-left: 30px;
+	font-size: 20px;
+	margin-bottom: 0px;
+	color: white;
+}
+
+.login_menu input {
+	width: 80%;
+	margin-bottom: 20px;
+}
+
+.login_menu input[type="text"], input[type="password"] {
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 30px;
+	font-size: 16px;
+}
+
+.login_menu input[type="submit"] {
+	border: none;
+	outline: none;
+	height: 30px;
+	background: #fb2525;
+	color: #fff;
+	font-size: 18px;
+}
+
+.avatar {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: relative;
+	top: -50px;
+	left: calc(50%-50px);
 }
 
 .button {
