@@ -83,10 +83,6 @@
 	color: rgba(80, 80, 80, 0.5);
 	top: 350px;
 }
-.fa-chevron-down {
-	color: rgba(80, 80, 80, 0.5);
-	position: absolute;
-}
 
 .fa-chevron-right {
 	right: 0%;
@@ -285,6 +281,13 @@ main {
 	float: left;
 	height: 256px;
 	padding-right: 80px;
+}
+.footer_info {
+	font-size: 40px;
+	font-family: Alegreya Sans SC Thin;
+	float: Right;
+	clear: left;
+	padding-right: 15%;
 }
 
 .name {
