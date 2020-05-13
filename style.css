@@ -336,9 +336,17 @@ main {
 
 .add-to-cart-button {
 	font-size: 3em;
-	background-color: green;
+	background-color: darkgreen;
 	color: greenyellow;
 	font-family: Alegreya Sans SC;
 	border: 0px;
 	transition-duration: 0s;
+}
+
+.add-to-cart-button:hover {
+	background-color: green;
+}
+
+.fa-cart-plus {
+	padding: 5px;
 }
