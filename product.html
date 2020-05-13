@@ -6,7 +6,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="ICON" href="favicon.ico" type="image/ico">
-        <title>product</title>
+		<title>product</title>
     </head>
     <body>
         <header>
@@ -38,6 +38,7 @@
 			</div>
         </header>
     	<main>
+			<script src="productQuantity.js"></script>
 			<div class="clearfix">
 				<div>
 					<div style="width: 60%; float: left;">
@@ -47,15 +48,13 @@
 					<div style="width: 40%; float: left;">
 						<h1 style="font-size: 4em;">$160</h1>
 						<div style="text-align: center;">
-							<span style="text-align: center; font-size: 3em; border-style: solid; padding-right: 15px; padding-left: 15px;">-</span>
-							<span style="text-align: center; font-size: 3em; margin-right: 30px; margin-left: 30px;" id="quantity">1</span>
-							<span style="text-align: center; font-size: 3em; border-style: solid; padding-right: 15px; padding-left: 15px;">+</span>
-
-							<script src="main.js"></script>
+							<span onclick="decreaseQuantity()" style="text-align: center; font-size: 3em; border-style: solid; padding-right: 15px; padding-left: 15px;">-</span>
+							<span id="quantity" style="text-align: center; font-size: 3em; margin-right: 30px; margin-left: 30px;">1</span>
+							<span onclick="increaseQuantity()" style="text-align: center; font-size: 3em; border-style: solid; padding-right: 15px; padding-left: 15px;">+</span>
 							
 							<p style="color: crimson; font-size: 3em; margin-top: 90px;  margin-bottom: 90px;">Only 5 left!</p>
 
-							<button class="add-to-cart-button">
+							<button class="add-to-cart-button" onclick="location.href='Cart.html'">
 								<i class="fa fa-cart-plus fa-2x"></i>
 								<span style="font-size: 1.5em; margin-bottom: 50px; margin-right: 50px;">Add to cart</span>
 							</button>
@@ -94,6 +93,6 @@
 					© 2020 TangentKeys UF
 				<p>
 			</div>
-        </footer>
+		</footer>
     </body>
 </html>

@@ -352,6 +352,7 @@ main {
 
 .add-to-cart-button:hover {
 	background-color: green;
+	cursor: pointer;
 }
 
 .fa-cart-plus {
