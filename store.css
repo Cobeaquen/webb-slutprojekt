@@ -6,7 +6,10 @@
     background-color: black;
     color: white;
     float: left;
-    margin-right: 100px;
+    margin-right: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: left;
 }
 
 #products {
@@ -25,7 +28,7 @@
 
     float: right;
 
-    margin-right: 100px;
+    margin-right: 50px;
     text-align: center;
 
     user-select: none;
