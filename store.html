@@ -42,13 +42,55 @@
         <main>
             <div>
                 <ol id="product-specifier">
-                    <li>All products</li>
-                    <li>Cases and plates</li>
-                    <li>PCBs</li>
-                    <li>Keyboards</li>
-                    <li>Custom assembly</li>
+                    <input type="checkbox" id="all-products" value="Products">
+                    <label for="all-products">All products</label><br>
+                    <input type="checkbox" id="cases-and-plates" value="Products">
+                    <label for="cases-and-plates">Cases and plates</label><br>
+                    <input type="checkbox" id="pcbs" value="Products">
+                    <label for="pcbs">PCBs</label><br>
+                    <input type="checkbox" id="keyboards" name="p" value="Products">
+                    <label for="keyboards">Keyboards</label><br>
+                    <input type="checkbox" id="custom-assembly" name="p" value="Products">
+                    <label for="custom-assembly">Custom assembly</label><br>
                 </ol>
+            </div>
 
+            <div id="products">
+                <div class="product" style="background-image: url('bilder/bildspel/img0.jpg');">
+                    <div id="img"></div>
+					<span class="product-text">TanDuck60RGB</span>
+					<p class="product-type-text">Keyboard</p>
+					
+					<div class="info-texts">
+						<p>Pricing: $180</p>
+						<p>Availability: 1 pcs</p>
+						<p>Formfactor: 60%</p>
+					</div>
+				</div>
+
+				<div class="product" style="background-image: url('bilder/bildspel/img1.jpg');">
+                    <div id="img"></div>
+					<span class="product-text">TK60</span>
+					<p class="product-type-text">PCB</p>
+					
+					<div class="info-texts">
+						<p>Pricing: $30</p>
+						<p>Availability: 5 pcs</p>
+						<p>Formfactor: 60%</p>
+					</div>
+				</div>
+
+				<div class="product" style="background-image: url('bilder/bildspel/img2.jpg');">
+                    <div id="img"></div>
+					<span class="product-text">Custom Assembly</span>
+					<p class="product-type-text">Keyboard</p>
+					
+					<div class="info-texts">
+						<p>Pricing: $200-$300</p>
+						<p>Availability: 5 pcs</p>
+						<p>Formfactor: 60%</p>
+					</div>
+				</div>
             </div>
 
         </main>
@@ -72,5 +114,7 @@
 				<p>
 			</div>
         </footer>
+
+        <script src="store.js"></script>
     </body>
 </html>
