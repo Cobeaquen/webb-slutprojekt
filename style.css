@@ -340,3 +340,12 @@ main {
 	display: table;
 	clear: both;
 }
+
+.add-to-cart-button {
+	font-size: 3em;
+	background-color: green;
+	color: greenyellow;
+	font-family: Alegreya Sans SC;
+	border: 0px;
+	transition-duration: 0s;
+}
