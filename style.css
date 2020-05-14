@@ -51,7 +51,7 @@
 	animation-timing-function: ease-in-out;
 	background-image: url('bilder/bildspel/img0.jpg');
 	pointer-events: none;
-	background-size: cover;
+	background-size: contain;
 	background-repeat: no-repeat;
 }
 #nybild {
@@ -65,7 +65,7 @@
 	animation-timing-function: ease-in-out;
 	background-image: url('bilder/bildspel/img1.jpg');
 	pointer-events: none;
-	background-size: cover;
+	background-size: contain;
 	background-repeat: no-repeat;
 }
 
