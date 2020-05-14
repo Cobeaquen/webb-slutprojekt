@@ -329,6 +329,8 @@ main {
 	padding-left: 30px;
 	font-size: 20px;
 	margin-bottom: 0px;
+	font-family: Alegreya Sans SC thin;
+	font-weight: bold;
 	color: white;
 }
 
@@ -353,6 +355,23 @@ main {
 	background: #fb2525;
 	color: #fff;
 	font-size: 18px;
+	border-radius: 20px;
+}
+
+.login_box input[type="submit"]:hover {
+	cursor: pointer;
+	background: #ffc107;
+}
+
+.login_menu a {
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	color: darkgrey;
+}
+
+.login_menu a:hover {
+	color: #ffc107;
 }
 
 .avatar {
