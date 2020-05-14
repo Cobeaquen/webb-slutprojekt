@@ -1,4 +1,4 @@
-#product-specifier {
+#product-filter {
     font-family: Alegreya Sans SC Light;
     font-size: 24px;
     width: auto;
@@ -73,12 +73,5 @@
     font-size: 36px;
     height: auto;
     line-height: 0.4;
-    z-index: 1;
-}
-
-.product #img {
-    background-image: url('bilder/bildspel/img0.jpg');
-    background-position: center;
-    background-size: initial;
     z-index: 1;
 }

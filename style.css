@@ -261,7 +261,7 @@ html {
 }
 
 body {
-	max-width: 2560px;
+	max-width: 100%;
 	background-color: #141414;
 	font-family: Alegreya Sans;
 }

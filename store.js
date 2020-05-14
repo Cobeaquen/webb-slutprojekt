@@ -1,4 +1,4 @@
-var list = document.getElementById('product-specifier');
+var list = document.getElementById('product-filter');
 var allProducts = document.getElementById('all-products');
 
 for (var i = 0; i < list.children.length; i++) {
