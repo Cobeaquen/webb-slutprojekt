@@ -184,6 +184,12 @@ li {
 	clear: left;
 }
 
+.footer-links {
+	float: left; 
+	width: 30%;
+	margin-left: 15px;
+}
+
 .info {
 	background-color: black;
 	height: 320px;
@@ -285,8 +291,7 @@ main {
 	font-size: 40px;
 	font-family: Alegreya Sans SC Thin;
 	float: Right;
-	clear: left;
-	padding-right: 15%;
+	padding-right: 100px;
 }
 .footer_mail {
 	font-size: 20px;
