@@ -204,7 +204,7 @@ li {
 	transition-duration: 0.4s;
 }
 
-.fa-twitter:hover, .fa-instagram:hover, .fa-shopping-cart:hover {
+.fa-twitter:hover, .fa-instagram:hover, .fa-shopping-cart:hover, .fa-user:hover {
 	color: black;
 	background-color: white;
 }
