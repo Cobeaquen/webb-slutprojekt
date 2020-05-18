@@ -81,7 +81,7 @@
 .fa-chevron-right, .fa-chevron-left {
 	position: absolute;
 	color: rgba(80, 80, 80, 0.5);
-	top: 350px;
+	top: 1em;
 }
 
 .fa-chevron-right {
@@ -120,6 +120,7 @@
   position: relative;
   display: inline-block;
   width: 33.33%;
+  z-index: 1;
 }
 
 .dropdown-content {
