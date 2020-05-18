@@ -320,6 +320,66 @@ main {
 	background-color: black;
 }
 
+.creat_account_menu {
+	overflow: auto;
+	color: #fff;
+	background-color: #000;
+	width: 320px;
+	height: 650px;
+	top: 60%;
+	left: 42%;
+	position: relative;
+}
+
+.creat_account_menu input{
+	width: 80%;
+	margin-bottom: 20px;
+}
+.creat_account_menu p {
+	text-align: left;
+	padding-left: 30px;
+	font-size: 20px;
+	margin-bottom: 0px;
+	font-family: Alegreya Sans SC thin;
+	font-weight: bold;
+	color: white;
+}
+
+.creat_account_menu input[type="text"], input[type="password"] {
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 30px;
+	font-size: 16px;
+}
+
+.creat_account_menu input[type="submit"] {
+	border: none;
+	outline: none;
+	height: 30px;
+	background: #fb2525;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
+.creat_account_menu input[type="submit"]:hover {
+	cursor: pointer;
+}
+
+.creat_account_menu a {
+	text-decoration: none;
+	font-size: 15px;
+	line-height: 20px;
+	color: darkgrey;
+	text-align: center;
+}
+
+.creat_account_menu a:hover {
+	color: #ffc107;
+}
+
 .login_menu {
 	overflow: auto;
 	color: #fff;
@@ -366,14 +426,14 @@ main {
 
 .login_box input[type="submit"]:hover {
 	cursor: pointer;
-	background: #ffc107;
 }
 
 .login_menu a {
 	text-decoration: none;
-	font-size: 12px;
+	font-size: 15px;
 	line-height: 20px;
 	color: darkgrey;
+	text-align: center;
 }
 
 .login_menu a:hover {
