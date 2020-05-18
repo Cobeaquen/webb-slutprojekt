@@ -6,7 +6,16 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="ICON" href="favicon.ico" type="image/ico">
-        <title>Cart</title>
+		<title>Cart</title>
+		<style>
+			.remove-item {
+				margin: 0;
+  				position: absolute;
+  				top: 50%;
+  				-ms-transform: translateY(-50%);
+  				transform: translateY(-50%);
+			}
+		</style>
     </head>
     <body>
         <header>
@@ -45,7 +54,7 @@
 					<hr>
 				</div>
 				<div>
-					<div style="font-size: 5em; width: 10%; height: 100%; float: left;">x</div>
+					<div class="remove-item" style="font-size: 5em; width: 10%; height: 100%; float: left;">x</div>
 					<img src="bilder/bildspel/img0.jpg">
 				</div>
 <!-- 				<div>
