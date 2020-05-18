@@ -185,18 +185,15 @@ li {
 	clear: left;
 }
 
+.footer-links {
+	float: left; 
+	width: 30%;
+	margin-left: 15px;
+}
+
 .info {
 	background-color: black;
 	height: 320px;
-}
-
-.social-media{
-	text-align: center;
-	margin-right: 60%;
-	display: inline;
-	position: relative;
-	top: 20px;
-	left: 100px;
 }
 
 .fa {
@@ -208,7 +205,7 @@ li {
 	transition-duration: 0.4s;
 }
 
-.fa-twitter:hover, .fa-instagram:hover, .fa-shopping-cart:hover {
+.fa-twitter:hover, .fa-instagram:hover, .fa-shopping-cart:hover, .fa-user:hover {
 	color: black;
 	background-color: white;
 }
@@ -296,8 +293,7 @@ main {
 	font-size: 40px;
 	font-family: Alegreya Sans SC Thin;
 	float: Right;
-	clear: left;
-	padding-right: 15%;
+	padding-right: 100px;
 }
 .footer_mail {
 	font-size: 20px;
