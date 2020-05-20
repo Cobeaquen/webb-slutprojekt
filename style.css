@@ -279,8 +279,11 @@ h2 {
 }
 .body_text {
 	font-family: Alegreya Sans SC Light;
-	text-align: none;
+	text-align: left;
 	font-size: 24px;
+	margin-left: 500px;
+	margin-right: 500px;
+
 }
 
 html {
@@ -336,7 +339,7 @@ main {
 
 .FAQ_text {
 	text-align: left;
-	margin-left: 300px;
+	margin-left: 600px;
 }
 
 .FAQ_text h3{
@@ -345,7 +348,7 @@ main {
 	text-align: left;
 }
 
-.FAQ_text a:hover {
+.FAQ_text a:hover{
 	text-decoration: underline;
 	color: #ffc107;
 	font-weight: bold;
@@ -518,6 +521,13 @@ main {
 	border: 1px solid black;
 }
 
+.about_us_content p {
+	float: left;
+	text-align: left;
+	margin-left: 550px;
+	margin-right: 550px;
+	font-size: 18px;
+}
 .navmenu:after {
 	content: "";
 	display: table;
