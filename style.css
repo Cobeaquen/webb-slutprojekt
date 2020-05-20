@@ -82,6 +82,7 @@
 	position: absolute;
 	color: rgba(80, 80, 80, 0.5);
 	top: 1em;
+	cursor: pointer;
 }
 
 .fa-chevron-right {
