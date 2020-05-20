@@ -114,6 +114,19 @@
 	margin-right: 12px;
 }
 
+#cart-quantity {
+	font-family: 'Alegreya Sans SC';
+	position: absolute;
+	font-size: 24px;
+	text-align: center;
+	padding-left: 90px;
+	user-select: none;
+	pointer-events: none;
+	
+	text-align: center;
+	text-decoration: none;
+}
+
 .dropbtn {
 	font-family: "Alegreya Sans SC Light";
 	background-color: black;

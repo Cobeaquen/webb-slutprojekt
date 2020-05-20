@@ -12,6 +12,9 @@ window.onload = function() {
     this.amountLeft = Number(sessionStorage.getItem('amount_left'));
     this.quantity = Number(sessionStorage.getItem('quantity'));
 
+    if (this.quantity == 0)
+        this.quantity = 1;
+
     if (this.amountLeft == 0) {
         amountLeft = Math.floor((Math.random() * 10) + 1);
     }
