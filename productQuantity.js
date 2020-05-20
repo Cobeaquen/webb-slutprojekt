@@ -12,12 +12,14 @@ function increaseQuantity() {
     if (quantity < amountLeft) {
         var quantityElement = this.document.getElementById('quantity');
         var priceElement = this.document.getElementById("price");
+        var totalCost = this.document.getElementById("total-cost");
 
         quantity++;
         price = quantity * 160;
 
         quantityElement.innerHTML = quantity;
         priceElement.innerHTML = `$${price}`;
+        totalCost.innerHTML = `Total cost: $${price + 10}`;
     }
 }
 
@@ -25,11 +27,13 @@ function decreaseQuantity() {
     if  (quantity > 1) {
         var quantityElement = this.document.getElementById('quantity');
         var priceElement = this.document.getElementById("price");
+        var totalCost = this.document.getElementById("total-cost");
 
         quantity--;
         price = quantity * 160;
 
         quantityElement.innerHTML = quantity;
         priceElement.innerHTML = `$${price}`;
+        totalCost.innerHTML = `Total cost: $${price + 10}`;
     }
 }
