@@ -6,7 +6,7 @@
 		<title>TangentKeys</title>
 		<link href="css/style.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="ICON" href="bilder/favicon.ico" type="image/ico">
+		<link rel="ICON" href="bilder/favicon.ico" type="image/ico">
 	</head>
 	<body>	
         <header>
@@ -18,7 +18,9 @@
 				</span>
 				</a>
 				<div class="user-navigation">
-					<a href="cart-empty.html"><i style="width: 150px" class="fa fa-shopping-cart fa-4x"></i></a>
+					<div id="cart-quantity" style="font-family: 'Alegreya Sans SC Thin';
+					font-size: 100px;">1</div>
+					<a onclick="enterCart()"><i style="width: 150px" class="fa fa-shopping-cart fa-4x"></i></a>
 					<a href="login.html"><i style="width: 100px" class="fa fa-user fa-4x"></i></a>
 				</div>
 			</div>
@@ -76,6 +78,7 @@
 			</div>
 		</footer>
         
-        <script src="javascript/main.js"></script>
+		<script src="javascript/slideshow.js"></script>
+		<script src="javascript/main.js"></script>
 	</body>
 </html>
