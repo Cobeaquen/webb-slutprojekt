@@ -46,7 +46,6 @@ for (var i = 0; i < list.children.length; i++) {
             default:
                 break;
         }
-        console.log(e.srcElement.id);
     };
 }
 
