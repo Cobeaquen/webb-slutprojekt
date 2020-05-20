@@ -1,78 +1,24 @@
-var index = 0;
-var index2 = 1;
-var imgs = ['bilder/bildspel/img0.jpg', 'bilder/bildspel/img1.jpg', 'bilder/bildspel/img2.jpg', 'bilder/bildspel/img3.jpg']
-var newImgElem = document.getElementById('nybild');
-var imgElem = document.getElementById('bild');
-var timeout;
+var cartqtElement;
+var full;
 
-newImgElem.addEventListener('animationiteration', cycleImage);
+cartqtElement = this.document.getElementById('cart-quantity');
+full = sessionStorage.getItem('cart_full') == 'true';
+if (full) {
+    cartqtElement.hidden = false;
+}
+else {
+    cartqtElement.hidden = true;
+}
 
-function cycleImage() {
-    console.log('Byter bild...');
-
-    if (imgElem.style.animationDirection == "reverse") {
-        newImgElem.style.backgroundImage = imgElem.style.backgroundImage;
+function enterCart() {
+    if (full) {
+        window.location = 'cart.html';
     }
     else {
-        imgElem.style.backgroundImage = newImgElem.style.backgroundImage;
-    }
-
-    imgElem.style.animationDirection = "normal";
-    newImgElem.style.animationDirection = "normal";
-
-    newImgElem.style.animationPlayState = "paused";
-    imgElem.style.animationPlayState = "paused";
-
-    timeout = setTimeout(nextImg, 4000);
-}
-
-function nextImg() {
-    imgElem.style.backgroundImage = "url(" + imgs[index] + ")";
-    newImgElem.style.backgroundImage = "url(" + imgs[index2] + ")";
-
-    newImgElem.style.animationPlayState = "running";
-    imgElem.style.animationPlayState = "running";
-
-    index = (index + 1) >= imgs.length ? 0 : (index + 1)
-    index2 = (index2 + 1) >= imgs.length ? 0 : (index2 + 1)
-}
-
-function prevImg() {
-    index = ((index - 1) < 0 ? (imgs.length - 1) : (index - 1))
-    index2 = ((index2 - 1) < 0 ? (imgs.length - 1) : (index2 - 1))
-    
-    imgElem.style.backgroundImage = "url(" + imgs[index] + ")";
-    newImgElem.style.backgroundImage = "url(" + imgs[index2] + ")";
-
-    imgElem.style.animationDirection = "reverse";
-    newImgElem.style.animationDirection = "reverse";
-
-    newImgElem.style.animationPlayState = "running";
-    imgElem.style.animationPlayState = "running";
-}
-
-function moveImg(forward) {
-    console.log('Byter bild...');
-    if (imgElem.style.animationPlayState != "running") {
-        clearTimeout(timeout);
-        if (forward)
-            nextImg();
-        else
-            prevImg();
+        window.location = 'cart-empty.html';
     }
 }
 
-window.onload = function() {
-    this.timeout = setTimeout(this.nextImg, 4000);
-    this.addEventListener('focus', () => {
-
-    });
-};
-window.onkeydown = function(key) {
-    if (key.keyCode == 39)  {                       // trycker ned högerpilen
-        this.moveImg(true);
-    }
-    else if (key.keyCode == 37) {                   // trycker ned vänsterepilen
-        this.moveImg(false);
-    }
-};
+function clearCart() {
+    sessionStorage.setItem('cart_full', 'false');
+}

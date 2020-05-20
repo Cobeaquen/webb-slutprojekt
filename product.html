@@ -19,7 +19,8 @@
 				</span>
 				</a>
 				<div class="user-navigation">
-					<a href="cart-empty.html"><i style="width: 150px" class="fa fa-shopping-cart fa-4x"></i></a>
+					<div id="cart-quantity">1</div>
+					<a href='#' onclick="enterCart()"><i style="width: 150px" class="fa fa-shopping-cart fa-4x"></i></a>
 					<a href="login.html"><i style="width: 100px" class="fa fa-user fa-4x"></i></a>
 				</div>
 			</div>
@@ -38,7 +39,6 @@
 			</div>
         </header>
     	<main>
-			<script src="javascript/productQuantity.js"></script>
 			<div class="clearfix">
 				<div>
 					<div id="product-image">
@@ -54,7 +54,7 @@
 							
 							<p id="amount-left">Only 5 left!</p>
 
-							<button id="add-to-cart-button" onclick="location.href='cart.html'">
+						<button id="add-to-cart-button" onclick="addToCart()">
 								<i class="fa fa-cart-plus fa-2x"></i>
 								<span>Add to cart</span>
 							</button>
@@ -93,5 +93,8 @@
 				</div>
 			</div>
 		</footer>
+
+		<script src="javascript/main.js"></script>
+		<script src="javascript/productQuantity.js"></script>
     </body>
 </html>

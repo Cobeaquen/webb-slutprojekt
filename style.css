@@ -1,16 +1,16 @@
 @font-face {
 	font-family: Alegreya Sans;
-	src: url(../typsnitt/AlegreyaSans-Regular.ttf);
+	src: url(AlegreyaSans-Regular.ttf);
 }
 
 @font-face {
 	font-family: Alegreya Sans SC Thin;
-	src: url(../typsnitt/AlegreyaSansSC-Thin.ttf);
+	src: url(AlegreyaSansSC-Thin.ttf);
 }
 
 @font-face {
 	font-family: Alegreya Sans SC Light;
-	src: url(../typsnitt/AlegreyaSansSC-Light.ttf);
+	src: url(AlegreyaSansSC-Light.ttf);
 }
 
 @keyframes in {
@@ -58,7 +58,7 @@
 	animation-play-state: paused;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
-	background-image: url('../bilder/bildspel/img0.jpg');
+	background-image: url('bilder/bildspel/img0.jpg');
 	pointer-events: none;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -72,7 +72,7 @@
 	animation-play-state: paused;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
-	background-image: url('../bilder/bildspel/img1.jpg');
+	background-image: url('bilder/bildspel/img1.jpg');
 	pointer-events: none;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -114,21 +114,8 @@
 	margin-right: 12px;
 }
 
-#cart-quantity {
-	font-family: 'Alegreya Sans SC';
-	position: absolute;
-	font-size: 24px;
-	text-align: center;
-	padding-left: 90px;
-	user-select: none;
-	pointer-events: none;
-	
-	text-align: center;
-	text-decoration: none;
-}
-
 .dropbtn {
-	font-family: "Alegreya Sans SC Light";
+	font-family: Alegreya Sans SC Light;
 	background-color: black;
 	color: white;
 	font-size: 2.5em;
@@ -269,14 +256,14 @@ li {
 }
 
 .h1_news {
-	font-family: "Alegreya Sans SC Thin";
+	font-family: Alegreya Sans SC Thin;
 	color: white;
 	text-align: center;
 	padding-top: 20px;
 	font-size: 50px;
 }
 .h1_login {
-	font-family: "Alegreya Sans SC thin";
+	font-family: Alegreya Sans SC thin;
 	color: white;
 	text-align: center;
 	font-size: 34px;
@@ -286,12 +273,12 @@ li {
 h2 {
 	color: white;
 	text-align: center;
-	font-family: "Alegreya Sans SC Light";
+	font-family: Alegreya Sans SC Light;
 	font-size: 30px;
 	padding-top: 0px;
 }
 .body_text {
-	font-family: "Alegreya Sans";
+	font-family: Alegreya Sans SC Light;
 	text-align: left;
 	font-size: 24px;
 	margin-left: 500px;
@@ -303,7 +290,7 @@ body {
 	max-width: 1920px;
 	margin: 0 auto;
 	background-color: #141414;
-	font-family: "Alegreya Sans";
+	font-family: Alegreya Sans;
 }
 
 footer {
@@ -334,13 +321,13 @@ main {
 }
 .footer_info {
 	font-size: 40px;
-	font-family: "Alegreya Sans SC Thin";
+	font-family: Alegreya Sans SC Thin;
 	float: Right;
 	padding-right: 100px;
 }
 .footer_mail {
 	font-size: 20px;
-	font-family: "Alegreya Sans SC Thin";
+	font-family: Alegreya Sans SC Thin;
 	float: Right;
 	clear: left;
 	padding-right: 10%;
@@ -366,7 +353,7 @@ main {
 .name {
 	position: relative;
 	font-size: 6em;
-	font-family: "Alegreya Sans SC Thin";
+	font-family: Alegreya Sans SC Thin;
 	padding-left: 5px;
 }
 
@@ -401,7 +388,7 @@ main {
 	padding-left: 30px;
 	font-size: 20px;
 	margin-bottom: 0px;
-	font-family: "Alegreya Sans SC thin";
+	font-family: Alegreya Sans SC thin;
 	font-weight: bold;
 	color: white;
 }
@@ -456,7 +443,7 @@ main {
 	padding-left: 30px;
 	font-size: 20px;
 	margin-bottom: 0px;
-	font-family: "Alegreya Sans SC thin";
+	font-family: Alegreya Sans SC thin;
 	font-weight: bold;
 	color: white;
 }
@@ -501,6 +488,15 @@ main {
 	color: #ffc107;
 }
 
+.avatar {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: relative;
+	top: -50px;
+	left: calc(50%-50px);
+}
+
 .button {
 	float: left;
 	width: 33.33%;
@@ -510,7 +506,7 @@ main {
 	box-sizing: border-box;
 	border: 1px solid white;
 	font-size: 2.5em;
-	font-family: "Alegreya Sans SC Light";
+	font-family: Alegreya Sans SC Light;
 	transition-duration: 0.4s;
 }
 
@@ -519,7 +515,6 @@ main {
 	background-color: white;
 	box-sizing: border-box;
 	border: 1px solid black;
-	cursor: pointer;
 }
 
 .about_us_content p {
@@ -539,7 +534,7 @@ main {
 	font-size: 3em;
 	background-color: darkgreen;
 	color: greenyellow;
-	font-family: "Alegreya Sans SC";
+	font-family: Alegreya Sans SC;
 	border: 0px;
 	transition-duration: 0s;
 }

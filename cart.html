@@ -19,7 +19,8 @@
 				</span>
 				</a>
 				<div class="user-navigation">
-					<a href="cart-empty.html"><i style="width: 150px" class="fa fa-shopping-cart fa-4x"></i></a>
+					<div id="cart-quantity">1</div>
+					<a href='#' onclick="enterCart()"><i style="width: 150px" class="fa fa-shopping-cart fa-4x"></i></a>
 					<a href="login.html"><i style="width: 100px" class="fa fa-user fa-4x"></i></a>
 				</div>
 			</div>
@@ -38,14 +39,13 @@
 			</div>
         </header>
         <main>
-			<script src="javascript/productQuantity.js"></script>
 			<div class="clearfix">
 				<div>
 					<h1 id="product-name">TANDUCK60RGB</h1>
 				</div>
 				<hr>
 				<div id="change-quantity-in-cart">
-                    <a id="remove-item" href="cart-empty.html">X</a>
+                    <a id="remove-item" onclick="clearCart()" href="cart-empty.html">X</a>
 					<img src="bilder/bildspel/img0.jpg" alt="image of tanduck60 keyboard">
 					
 					<div style="text-align: center;">
@@ -94,5 +94,8 @@
 				</div>
 			</div>
 		</footer>
+
+		<script src="javascript/main.js"></script>
+		<script src="javascript/productQuantity.js"></script>
     </body>
 </html>
