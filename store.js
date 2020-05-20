@@ -5,55 +5,50 @@ var products = document.getElementById('all-products');
 
 var filterElems = [];
 
+var keyboards = false;
+var cases_plates = false;
+var pcbs = false;
+var custom_assembly = false;
+
 for (var i = 0; i < list.children.length; i++) {
     changeEvents = list.children.item(i).onchange = (e) => {
-        if (e !== allProducts) {
+        var elem = e.srcElement;
+        if (elem.id !== allProducts.id) {
             allProducts.checked = false;
         }
+        /*
+        else if (allProducts.checked) {
+            for (var i = 0; i < list.children.length; i++) {
+                if (list.children.item(i) !== )
+            }
+        }
+        */
+        //keyboards = e == list.children.item
+        switch (e.srcElement.id) {
+            case "keyboards-filter":
+                keyboards = e.checked;
+                break;
+            case "cases-and-plates-filter":
+                cases_plates = e.checked;
+                break;
+            case "pcbs-filter":
+                pcbs = e.checked;
+                break;
+            case "custom-assembly-filter":
+                custom_assembly = e.checked;
+                break;
+            case "all-products-filter":
+                keyboards = allProducts.checked;
+                cases_plates = allProducts.checked;
+                pcbs = allProducts.checked;
+                custom_assembly = allProducts.checked;
+                break;
+            default:
+                break;
+        }
+        console.log(e.srcElement.id);
     };
 }
-
-allProducts.onchange = (e) => {
-    if (allProducts.checked) {
-        for (var i = 0; i < list.children.length; i++)
-        {
-            var elem = list.children.item(i);
-            if (elem !== allProducts) {
-                elem.checked = allProducts.checked;
-            }
-
-            filterElems.push(elem);
-        }
-    }
-
-    for (var i = 0; i < products.children.length; i++) {
-        var elem = list.children.item(i);
-        
-        elem.hidden = true;
-
-        if ()
-
-        if (elem.checked) {
-            switch (elem.id) {
-                case "keyboards":
-                    elem.hidden = false;
-                    break;
-                case "cases-and-plates":
-                    elem.hidden = false;
-                    break;
-                case "pcbs":
-                    elem.hidden = false;
-                    break;
-                case "custom-assembly":
-                    elem.hidden = false;
-                    break;
-            
-                default:
-                    break;
-            }
-        }
-    }
-};
 
 function elem(className) {
     return document.getElementById(className);
@@ -61,5 +56,5 @@ function elem(className) {
 
 window.onload = (e) => {
     allProducts.checked = true;
-    allProducts.onchange();
+    allProducts.onchange(e);
 }
