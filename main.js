@@ -1,16 +1,16 @@
-var index = 0;
-var index2 = 1;
-var imgs = ['bilder/bildspel/img0.jpg', 'bilder/bildspel/img1.jpg', 'bilder/bildspel/img2.jpg', 'bilder/bildspel/img3.jpg']
-var newImgElem = document.getElementById('nybild');
-var imgElem = document.getElementById('bild');
+var index = 0; // elementindex för bild1
+var index2 = 1; // elementindex för bild2
+var imgs = ['bilder/bildspel/img0.jpg', 'bilder/bildspel/img1.jpg', 'bilder/bildspel/img2.jpg', 'bilder/bildspel/img3.jpg'] // lista med alla bilder
+var newImgElem = document.getElementById('nybild'); // bilden som kommer från höger
+var imgElem = document.getElementById('bild'); // primära bilden som visas i mitten
 var timeout;
 
-newImgElem.addEventListener('animationiteration', cycleImage);
+newImgElem.addEventListener('animationiteration', cycleImage); // kör cycleImage() när animationen är färdig
 
 function cycleImage() {
     console.log('Byter bild...');
 
-    if (imgElem.style.animationDirection == "reverse") {
+    if (imgElem.style.animationDirection == "reverse") { // om vi har flyttat från
         newImgElem.style.backgroundImage = imgElem.style.backgroundImage;
     }
     else {
