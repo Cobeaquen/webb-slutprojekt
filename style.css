@@ -319,6 +319,23 @@ main {
 	padding-right: 10%;
 }
 
+.FAQ_text {
+	text-align: left;
+	margin-left: 300px;
+}
+
+.FAQ_text h3{
+	color: lightblue;
+	margin-bottom: -10px;
+	text-align: left;
+}
+
+.FAQ_text a:hover {
+	text-decoration: underline;
+	color: #ffc107;
+	font-weight: bold;
+}
+
 .name {
 	position: relative;
 	font-size: 6em;
