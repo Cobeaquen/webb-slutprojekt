@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta content="Custom made, high quality keyboards" name="keyboard, gaming, 60%, mechanical keyboard">
@@ -7,19 +7,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="ICON" href="favicon.ico" type="image/ico">
         <title>login</title>
-    </head>
-    <body>
-        <!DOCTYPE html>
-<html lang="sv">
-    <head>
-        <meta charset="UTF-8">
-        <meta content="Custom made, high quality keyboards" name="keyboard, gaming, 60%, mechanical keyboard">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="ICON" href="favicon.ico" type="image/ico">
-        <title>News</title>
-    </head>
-    <body>
+	</head>
+	<body>
         <header>
 			<div class="clearfix">
 				<a href="index.html">
@@ -35,38 +24,37 @@
 			</div>
 			<div class="navmenu">	
 				<ul>
-					<a href="store.html"><li class="button">Store</li></a>
-					<a href ="news.html"><li class="button">News</li></a>
-					<div class="dropdown">
-						<button class="dropbtn">Other</button>
-						<div class="dropdown-content">
-							<a href="faq.html">FAQ</a>
-							<a href="about-us.html">About</a>
-						</div>
-					</div>
+					<li class="button" onclick="location.href='store.html'">Store</li>
+					<li class="button" onclick="location.href='news.html'">News</li>
 				</ul>
+				<div class="dropdown">
+					<button class="dropbtn">Other</button>
+					<div class="dropdown-content">
+						<a href="faq.html">FAQ</a>
+						<a href="about-us.html">About</a>
+					</div>
+				</div>
 			</div>
         </header>
 		<main>
             <div class="creat_account_menu">
-                <i style="width: 100px" class="fa fa-user fa-4x"></i>
+                <i style="width: 100px" class="fa fa-user-circle fa-4x"></i>
                 <h1 class="h1_login">Create account</h1>
                 <form action="index.html">
                     <p>Email</p>
-                    <input type="text" style="color:white;" name="" placeholder="Enter Email">
+                    <input type="text" style="color:white;" placeholder="Enter Email">
                     <p>Username</p>
-                    <input type="text" style="color:white;" name="" placeholder="Enter Username">
+                    <input type="text" style="color:white;" placeholder="Enter Username">
                     <p>Password</p>
-                    <input type="password" style="color:white;" name="" placeholder="Enter Password"><br>
+                    <input type="password" style="color:white;" placeholder="Enter Password"><br>
                     <p>Confirm Password</p>
-                    <input type="password" style="color:white;" name="" placeholder="Confirm Password"><br>
-                    <a href="index.html"><input type="submit" name="" value="Create account"><br></a>
+                    <input type="password" style="color:white;" placeholder="Confirm Password"><br>
+                    <input onclick="location.href='store.html'" type="submit" value="Create account"><br>
                     <a href="login.html">Already have an account <br> click here to log in</a>
                     
                 </form>
 
             </div>
-        </div>
 		</main>
         <footer>
 			<div id="footer-wrapper" class="clearfix">
@@ -91,8 +79,5 @@
 				</div>
 			</div>
 		</footer>
-    </body>
-</html>
-
     </body>
 </html>

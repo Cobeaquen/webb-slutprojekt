@@ -519,6 +519,7 @@ main {
 	background-color: white;
 	box-sizing: border-box;
 	border: 1px solid black;
+	cursor: pointer;
 }
 
 .about_us_content p {
