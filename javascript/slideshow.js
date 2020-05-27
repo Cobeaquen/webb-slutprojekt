@@ -10,7 +10,7 @@ newImgElem.addEventListener('animationiteration', cycleImage); // kör cycleImag
 function cycleImage() {
     console.log('Byter bild...');
 
-    if (imgElem.style.animationDirection == "reverse") { // om vi har flyttat från
+    if (imgElem.style.animationDirection == "reverse") { // om vi har flyttat från vänster till höger
         newImgElem.style.backgroundImage = imgElem.style.backgroundImage;
     }
     else {
