@@ -525,6 +525,7 @@ main {
 .about_us_content p {
 	float: left;
 	text-align: left;
+	font-family: Alegreya Sans SC Light;
 	margin-left: 550px;
 	margin-right: 550px;
 	font-size: 18px;
